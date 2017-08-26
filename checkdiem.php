@@ -139,7 +139,7 @@ $par_congno = '@<td style="border-left: none">
 	$messages['messages'] = [];
 	for($i = 0;$i<$cout;$i++){
 		$value = [];
-		@$value['text'] = @'=========\n'.'Mã học phần : '.$congno[$i][1].'\nNội dung thu : '.$congno[$i][2].'\nTín chỉ : '.$congno[$i][3].'\nKhấu trừ : '.$congno[$i][4].'\nCông nợ : '.$congno[$i][5].'\n=========';
+		@$value['text'] = @'Mã học phần : '.$congno[$i][1].'\nNội dung thu : '.$congno[$i][2].'\nTín chỉ : '.$congno[$i][3].'\nKhấu trừ : '.$congno[$i][4].'\nCông nợ : '.$congno[$i][5];
 		$messages['messages'][] = $value;
 	}
 	$a = json_encode($messages,JSON_UNESCAPED_UNICODE);
