@@ -211,7 +211,7 @@ if($type =="xemlichthi")
 	$messages['messages'] = [];
 	for($i = 0;$i<$cout;$i++){
 		$value = [];
-		@$value['text'] = @'Mã học phần : '.$congno[$i][1].'-'.$congno[$i][2].'\nMôn Thi : '.$congno[$i][4].'\nNhóm : '.$congno[$i][6].'\nTừ sĩ số : '.$congno[$i][8].'\nNgày thi : '.$congno[$i][10].'-'.$congno[$i][11].'\nTiết Thi : '.$congno[$i][13].'->'.$congno[$i][14].'-'.$congno[$i][15].'\nPhòng Thi : '.$congno[$i][17].'\nLoại Thi : '.$congno[$i][19].'\nGhi Chú : '.$congno[$i][21];
+		@$value['text'] = @'Mã học phần : '.$congno[$i][1].'-'.$congno[$i][2].'\nMôn Thi : '.$congno[$i][4].'\nNhóm : '.$congno[$i][6].'\nTừ sĩ số : '.$congno[$i][8].'\nNgày thi : '.$congno[$i][10].'-'.$congno[$i][11].'\nTiết Thi : '.$congno[$i][13].'->'.$congno[$i][14].' -- '.$congno[$i][15].'\nPhòng Thi : '.$congno[$i][17].'\nLoại Thi : '.$congno[$i][19].'\nGhi Chú : '.$congno[$i][21];
 		$messages['messages'][] = $value;
 	}
 	$a = json_encode($messages,JSON_UNESCAPED_UNICODE);
